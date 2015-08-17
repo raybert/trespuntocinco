@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fcc928c9-7858-4f80-9078-0b4fed294c4a" name="S33686@P09FL13924W 2013-12-02 11:59:10" runUser="BCPDOM\S33686" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="059212b4-818a-469c-9ce4-9c3eb0c20fac">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="S33686_P09FL13924W 2013-12-02 11_59_10">
+      <DeploymentItem filename="d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Data\bin\Debug\TresPuntoCinco.Data.dll" />
+      <DeploymentItem filename="d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Model\bin\Debug\TresPuntoCinco.Model.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-02T11:59:10.3436484-05:00" queuing="2013-12-02T11:59:27.6400806-05:00" start="2013-12-02T11:59:27.9525726-05:00" finish="2013-12-02T12:00:14.2797530-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="P09FL13924W" outcome="Error" timestamp="2013-12-02T12:00:13.9828837-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="InsertTodasLasColumnas" storage="d:\datos de usuarios\s33686\my documents\visual studio 2010\projects\trespuntocinco\trespuntocinco.test\bin\debug\trespuntocinco.test.dll" id="bb5a6857-7ad1-cf1d-51ff-90bf80f3338c">
+      <Execution id="866961a9-b9b3-4c74-bdb4-b25dfdd1fded" />
+      <TestMethod codeBase="d:/datos de usuarios/s33686/my documents/visual studio 2010/Projects/TresPuntoCinco/TresPuntoCinco.Test/bin/Debug/TresPuntoCinco.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TresPuntoCinco.Test.Data.DbHelperTest, TresPuntoCinco.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InsertTodasLasColumnas" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="bb5a6857-7ad1-cf1d-51ff-90bf80f3338c" executionId="866961a9-b9b3-4c74-bdb4-b25dfdd1fded" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="866961a9-b9b3-4c74-bdb4-b25dfdd1fded" testId="bb5a6857-7ad1-cf1d-51ff-90bf80f3338c" testName="InsertTodasLasColumnas" computerName="P09FL13924W" duration="00:00:46.1553098" startTime="2013-12-02T11:59:28.1244432-05:00" endTime="2013-12-02T12:00:14.2797530-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="866961a9-b9b3-4c74-bdb4-b25dfdd1fded">
+    </UnitTestResult>
+  </Results>
+</TestRun>

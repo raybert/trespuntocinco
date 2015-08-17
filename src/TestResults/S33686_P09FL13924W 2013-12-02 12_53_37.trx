@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="bffa9618-9ffd-43e6-bb1c-6c64f9d17acc" name="S33686@P09FL13924W 2013-12-02 12:53:37" runUser="BCPDOM\S33686" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="059212b4-818a-469c-9ce4-9c3eb0c20fac">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="S33686_P09FL13924W 2013-12-02 12_53_37">
+      <DeploymentItem filename="d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Data\bin\Debug\TresPuntoCinco.Data.dll" />
+      <DeploymentItem filename="d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Model\bin\Debug\TresPuntoCinco.Model.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-02T12:53:37.7977842-05:00" queuing="2013-12-02T12:53:38.0790306-05:00" start="2013-12-02T12:53:38.0790306-05:00" finish="2013-12-02T12:53:38.8133962-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="InsertSinClavePrimaria" storage="d:\datos de usuarios\s33686\my documents\visual studio 2010\projects\trespuntocinco\trespuntocinco.test\bin\debug\trespuntocinco.test.dll" id="701b7950-fcef-c189-f1d3-564816df2136">
+      <Execution id="2cbd0c21-bba5-4f31-93dc-a630fbc97d64" />
+      <TestMethod codeBase="d:/datos de usuarios/s33686/my documents/visual studio 2010/Projects/TresPuntoCinco/TresPuntoCinco.Test/bin/Debug/TresPuntoCinco.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TresPuntoCinco.Test.Data.DbHelperTest, TresPuntoCinco.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InsertSinClavePrimaria" />
+    </UnitTest>
+    <UnitTest name="InsertTodasLasColumnas" storage="d:\datos de usuarios\s33686\my documents\visual studio 2010\projects\trespuntocinco\trespuntocinco.test\bin\debug\trespuntocinco.test.dll" id="bb5a6857-7ad1-cf1d-51ff-90bf80f3338c">
+      <Execution id="d9638293-e847-4a3b-baad-585bdf9adde9" />
+      <TestMethod codeBase="d:/datos de usuarios/s33686/my documents/visual studio 2010/Projects/TresPuntoCinco/TresPuntoCinco.Test/bin/Debug/TresPuntoCinco.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TresPuntoCinco.Test.Data.DbHelperTest, TresPuntoCinco.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InsertTodasLasColumnas" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="701b7950-fcef-c189-f1d3-564816df2136" executionId="2cbd0c21-bba5-4f31-93dc-a630fbc97d64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb5a6857-7ad1-cf1d-51ff-90bf80f3338c" executionId="d9638293-e847-4a3b-baad-585bdf9adde9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2cbd0c21-bba5-4f31-93dc-a630fbc97d64" testId="701b7950-fcef-c189-f1d3-564816df2136" testName="InsertSinClavePrimaria" computerName="P09FL13924W" duration="00:00:00.0191049" startTime="2013-12-02T12:53:38.0946554-05:00" endTime="2013-12-02T12:53:38.3759018-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2cbd0c21-bba5-4f31-93dc-a630fbc97d64">
+    </UnitTestResult>
+    <UnitTestResult executionId="d9638293-e847-4a3b-baad-585bdf9adde9" testId="bb5a6857-7ad1-cf1d-51ff-90bf80f3338c" testName="InsertTodasLasColumnas" computerName="P09FL13924W" duration="00:00:00.0020773" startTime="2013-12-02T12:53:38.4384010-05:00" endTime="2013-12-02T12:53:38.5633994-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9638293-e847-4a3b-baad-585bdf9adde9">
+    </UnitTestResult>
+  </Results>
+</TestRun>

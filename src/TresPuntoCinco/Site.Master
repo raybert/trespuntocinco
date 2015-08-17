@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TresPuntoCinco.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Tres Punto Cinco</title>
+    <meta name="description" content="overview &amp; stats" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--basic styles-->
+    <link rel="stylesheet" href="/Styles/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/Styles/css/bootstrap-responsive.min.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="/Styles/css/chosen.css" type="text/css" />
+    <link rel="stylesheet" href="/Styles/css/datepicker.css" type="text/css" />
+    <link rel="stylesheet" href="/Styles/css/bootstrap-timepicker.css" type="text/css" />
+    <link rel="stylesheet" href="/Styles/css/daterangepicker.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui-1.10.3.full.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/ace-rtl.min.css" type="text/css" />
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui-1.10.3.full.min.js"></script>
+    <script type="text/javascript" src="assets/js/ace-elements.min.js"></script>
+    <script type="text/javascript" src="assets/js/ace.min.js"></script>
+    <!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+    <!--page specific plugin styles-->
+    <!--fonts-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+    <!--ace styles-->
+    <link rel="stylesheet" href="/Styles/css/ace.min.css" type="text/css" />
+    <link rel="stylesheet" href="/Styles/css/ace-responsive.min.css" type="text/css" />
+    <link rel="stylesheet" href="/Styles/css/ace-skins.min.css" type="text/css" />
+    <!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+    <!--inline styles if any-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a href="#" class="brand"><small><i class="icon-truck"></i>&nbsp;3.5 Operador Log&iacute;stico </small></a>
+                <!--/.brand-->
+<%--                <ul class="nav ace-nav pull-right">
+                    <li class="light-blue user-profile"><a data-toggle="dropdown" href="#" class="user-menu dropdown-toggle">
+                        <span id="user_info"><small>Bienvenido</small>  </span><i class="icon-caret-down">
+                        </i></a>
+                        <ul class="pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer"
+                            id="user_menu">
+                            <li><a href="#"><i class="icon-cog"></i>Preferencias </a></li>
+                            <li><a href="#"><i class="icon-user"></i>Perfil </a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="icon-off"></i>Salir </a></li>
+                        </ul>
+                    </li>
+                </ul>--%>
+                <!--/.ace-nav-->
+            </div>
+            <!--/.container-fluid-->
+        </div>
+        <!--/.navbar-inner-->
+    </div>
+    <div class="container-fluid" id="main-container">
+        <a id="menu-toggler" href="#"><span></span></a>
+        <div id="sidebar">
+            <ul class="nav nav-list">
+                <li class="active"><a href="Default.aspx"><i class="icon-dashboard"></i><span>Resumen</span>
+                </a></li>
+                <li><a href="ListadoClientes.aspx"><i class="icon-building"></i><span>Clientes</span></a>
+                </li>
+                <li><a href="ListadoColaborador.aspx"><i class="icon-user"></i><span>Colaboradores</span>
+                </a></li>
+                <li><a href="ListadoRuta.aspx"><i class="icon-road"></i><span>Rutas</span> </a></li>
+                <li><a href="ListadoLugar.aspx"><i class="icon-map-marker"></i><span>Lugares</span>
+                </a></li>
+                <li><a href="Planificacion.aspx"><i class="icon-calendar"></i><span>Planificacion</span>
+                </a></li>
+                <li><a href="ListadoUnidad.aspx"><i class="icon-truck"></i><span>Unidades</span> </a>
+                </li>
+                <li><a href="ListadoMantenimiento.aspx"><i class="icon-wrench"></i><span>Mantenimiento</span> </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <form runat="server">
+    <div class="page">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+    <div class="footer">
+    </div>
+    </form>
+    <a href="#" id="btn-scroll-up" class="btn btn-small btn-inverse"><i class="icon-double-angle-up icon-only bigger-110">
+    </i></a>
+    <!--basic scripts-->
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='assets/js/jquery-1.9.1.min.js'>" + "<" + "/script>");
+    </script>-->
+    <!--page specific plugin scripts-->
+    <!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+    <script type="text/javascript" src="assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easy-pie-chart.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="assets/js/flot/jquery.flot.min.js"></script>
+    <script type="text/javascript" src="assets/js/flot/jquery.flot.pie.min.js"></script>
+    <script type="text/javascript" src="assets/js/flot/jquery.flot.resize.min.js"></script>
+    <script type="text/javascript" src="assets/js/date-time/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/date-time/bootstrap-timepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/date-time/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/date-time/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootbox.min.js"></script>
+    <!--ace scripts-->
+    <script type="text/javascript" src="assets/js/ace-elements.min.js"></script>
+    <script type="text/javascript" src="assets/js/ace.min.js"></script>
+    <!--inline scripts related to this page-->
+    <asp:ContentPlaceHolder ID="InlineScripts" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

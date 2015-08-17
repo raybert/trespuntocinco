@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D148EBFE-BC58-4AB9-9C06-42D2D7173792}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TresPuntoCinco</RootNamespace>
+    <AssemblyName>TresPuntoCinco</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="assets\css\ace-ie.min.css" />
+    <Content Include="assets\css\ace-rtl.min.css" />
+    <Content Include="assets\css\ace-skins.min.css" />
+    <Content Include="assets\css\ace.min.css" />
+    <Content Include="assets\css\bootstrap-editable.css" />
+    <Content Include="assets\css\bootstrap-timepicker.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\chosen.css" />
+    <Content Include="assets\css\colorbox.css" />
+    <Content Include="assets\css\colorpicker.css" />
+    <Content Include="assets\css\datepicker.css" />
+    <Content Include="assets\css\daterangepicker.css" />
+    <Content Include="assets\css\dropzone.css" />
+    <Content Include="assets\css\font-awesome-ie7.min.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\fullcalendar.css" />
+    <Content Include="assets\css\google-open-sans.css" />
+    <Content Include="assets\css\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="assets\css\jquery-ui-1.10.3.full.min.css" />
+    <Content Include="assets\css\jquery.gritter.css" />
+    <Content Include="assets\css\prettify.css" />
+    <Content Include="assets\css\select2.css" />
+    <Content Include="assets\css\ui.jqgrid.css" />
+    <Content Include="assets\images\gallery\image-1.jpg" />
+    <Content Include="assets\images\gallery\image-2.jpg" />
+    <Content Include="assets\images\gallery\image-3.jpg" />
+    <Content Include="assets\images\gallery\image-4.jpg" />
+    <Content Include="assets\images\gallery\image-5.jpg" />
+    <Content Include="assets\images\gallery\image-6.jpg" />
+    <Content Include="assets\images\gallery\thumb-1.jpg" />
+    <Content Include="assets\images\gallery\thumb-2.jpg" />
+    <Content Include="assets\images\gallery\thumb-3.jpg" />
+    <Content Include="assets\images\gallery\thumb-4.jpg" />
+    <Content Include="assets\images\gallery\thumb-5.jpg" />
+    <Content Include="assets\images\gallery\thumb-6.jpg" />
+    <Content Include="assets\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\img\glyphicons-halflings.png" />
+    <Content Include="assets\js\ace-elements.min.js" />
+    <Content Include="assets\js\ace-extra.min.js" />
+    <Content Include="assets\js\ace.min.js" />
+    <Content Include="assets\js\additional-methods.min.js" />
+    <Content Include="assets\js\bootbox.min.js" />
+    <Content Include="assets\js\bootstrap-colorpicker.min.js" />
+    <Content Include="assets\js\bootstrap-tag.min.js" />
+    <Content Include="assets\js\bootstrap-wysiwyg.min.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\chosen.jquery.min.js" />
+    <Content Include="assets\js\date-time\bootstrap-colorpicker.min.js" />
+    <Content Include="assets\js\date-time\bootstrap-datepicker.min.js" />
+    <Content Include="assets\js\date-time\bootstrap-timepicker.min.js" />
+    <Content Include="assets\js\date-time\daterangepicker.min.js" />
+    <Content Include="assets\js\date-time\moment.min.js" />
+    <Content Include="assets\js\dropzone.min.js" />
+    <Content Include="assets\js\excanvas.min.js" />
+    <Content Include="assets\js\flot\jquery.flot.min.js" />
+    <Content Include="assets\js\flot\jquery.flot.pie.min.js" />
+    <Content Include="assets\js\flot\jquery.flot.resize.min.js" />
+    <Content Include="assets\js\fuelux\data\fuelux.tree-sampledata.js" />
+    <Content Include="assets\js\fuelux\fuelux.spinner.min.js" />
+    <Content Include="assets\js\fuelux\fuelux.tree.min.js" />
+    <Content Include="assets\js\fuelux\fuelux.wizard.min.js" />
+    <Content Include="assets\js\fullcalendar.min.js" />
+    <Content Include="assets\js\html5shiv.js" />
+    <Content Include="assets\js\jqGrid\i18n\grid.locale-en.js" />
+    <Content Include="assets\js\jqGrid\jquery.jqGrid.min.js" />
+    <Content Include="assets\js\jquery-2.0.3.min.js" />
+    <Content Include="assets\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="assets\js\jquery-ui-1.10.3.full.min.js" />
+    <Content Include="assets\js\jquery.1.10.2.min.js" />
+    <Content Include="assets\js\jquery.autosize.min.js" />
+    <Content Include="assets\js\jquery.colorbox-min.js" />
+    <Content Include="assets\js\jquery.dataTables.bootstrap.js" />
+    <Content Include="assets\js\jquery.dataTables.min.js" />
+    <Content Include="assets\js\jquery.easy-pie-chart.min.js" />
+    <Content Include="assets\js\jquery.gritter.min.js" />
+    <Content Include="assets\js\jquery.hotkeys.min.js" />
+    <Content Include="assets\js\jquery.inputlimiter.1.3.1.min.js" />
+    <Content Include="assets\js\jquery.knob.min.js" />
+    <Content Include="assets\js\jquery.maskedinput.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.mobile.custom.min.js" />
+    <Content Include="assets\js\jquery.nestable.min.js" />
+    <Content Include="assets\js\jquery.slimscroll.min.js" />
+    <Content Include="assets\js\jquery.sparkline.min.js" />
+    <Content Include="assets\js\jquery.ui.touch-punch.min.js" />
+    <Content Include="assets\js\jquery.validate.min.js" />
+    <Content Include="assets\js\markdown\bootstrap-markdown.min.js" />
+    <Content Include="assets\js\markdown\markdown.min.js" />
+    <Content Include="assets\js\prettify.js" />
+    <Content Include="assets\js\respond.min.js" />
+    <Content Include="assets\js\select2.min.js" />
+    <Content Include="assets\js\spin.min.js" />
+    <Content Include="assets\js\typeahead-bs2.min.js" />
+    <Content Include="assets\js\x-editable\ace-editable.min.js" />
+    <Content Include="assets\js\x-editable\bootstrap-editable.min.js" />
+    <Content Include="EditarMantenimiento.aspx" />
+    <Content Include="EditarCapacitacion.aspx" />
+    <Content Include="EditarRuta.aspx" />
+    <Content Include="ListadoMantenimiento.aspx" />
+    <Content Include="ListadoRuta.aspx" />
+    <Content Include="EditarUnidad.aspx" />
+    <Content Include="ListadoUnidad.aspx" />
+    <Content Include="ListadoLugar.aspx" />
+    <Content Include="ListadoClientes.aspx" />
+    <Content Include="ListadoColaborador.aspx" />
+    <Content Include="EditarCliente.aspx" />
+    <Content Include="EditarColaborador.aspx" />
+    <Content Include="favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EditarLugar.aspx" />
+    <Content Include="IngresoPlanificacion.aspx" />
+    <Content Include="NuevaPlanificacion.aspx" />
+    <Content Include="Planificacion.aspx" />
+    <Content Include="Styles\css\ace-ie.min.css" />
+    <Content Include="Styles\css\ace-responsive.min.css" />
+    <Content Include="Styles\css\ace-skins.min.css" />
+    <Content Include="Styles\css\ace.min.css" />
+    <Content Include="Styles\css\bootstrap-responsive.css" />
+    <Content Include="Styles\css\bootstrap-responsive.min.css" />
+    <Content Include="Styles\css\bootstrap-responsive.min_old.css" />
+    <Content Include="Styles\css\bootstrap-responsive_old.css" />
+    <Content Include="Styles\css\bootstrap-timepicker.css" />
+    <Content Include="Styles\css\bootstrap.css" />
+    <Content Include="Styles\css\bootstrap.min.css" />
+    <Content Include="Styles\css\bootstrap_old.css" />
+    <Content Include="Styles\css\bootstrap_old.min.css" />
+    <Content Include="Styles\css\chosen.css" />
+    <Content Include="Styles\css\colorbox.css" />
+    <Content Include="Styles\css\datepicker.css" />
+    <Content Include="Styles\css\daterangepicker.css" />
+    <Content Include="Styles\css\docs.css" />
+    <Content Include="Styles\css\font-awesome-ie7.min.css" />
+    <Content Include="Styles\css\font-awesome.min.css" />
+    <Content Include="Styles\css\fullcalendar.css" />
+    <Content Include="Styles\css\jquery.gritter.css" />
+    <Content Include="Styles\css\prettify.css" />
+    <Content Include="Styles\images\gallery\image-1.jpg" />
+    <Content Include="Styles\images\gallery\image-2.jpg" />
+    <Content Include="Styles\images\gallery\image-3.jpg" />
+    <Content Include="Styles\images\gallery\image-4.jpg" />
+    <Content Include="Styles\images\gallery\image-5.jpg" />
+    <Content Include="Styles\images\gallery\image-6.jpg" />
+    <Content Include="Styles\images\gallery\thumb-1.jpg" />
+    <Content Include="Styles\images\gallery\thumb-2.jpg" />
+    <Content Include="Styles\images\gallery\thumb-3.jpg" />
+    <Content Include="Styles\images\gallery\thumb-4.jpg" />
+    <Content Include="Styles\images\gallery\thumb-5.jpg" />
+    <Content Include="Styles\images\gallery\thumb-6.jpg" />
+    <Content Include="Styles\img\glyphicons-halflings-white.png" />
+    <Content Include="Styles\img\glyphicons-halflings.png" />
+    <Content Include="Styles\js\ace-elements.min.js" />
+    <Content Include="Styles\js\ace.min.js" />
+    <Content Include="Styles\js\additional-methods.min.js" />
+    <Content Include="Styles\js\application.js" />
+    <Content Include="Styles\js\bootbox.min.js" />
+    <Content Include="Styles\js\bootstrap.js" />
+    <Content Include="Styles\js\bootstrap.min.js" />
+    <Content Include="Styles\js\bootstrap.min_old.js" />
+    <Content Include="Styles\js\bootstrap_old.js" />
+    <Content Include="Styles\js\chosen.jquery.min.js" />
+    <Content Include="Styles\js\date-time\bootstrap-datepicker.min.js" />
+    <Content Include="Styles\js\date-time\bootstrap-timepicker.min.js" />
+    <Content Include="Styles\js\date-time\daterangepicker.min.js" />
+    <Content Include="Styles\js\date-time\moment.min.js" />
+    <Content Include="Styles\js\excanvas.min.js" />
+    <Content Include="Styles\js\flot\jquery.flot.min.js" />
+    <Content Include="Styles\js\flot\jquery.flot.pie.min.js" />
+    <Content Include="Styles\js\flot\jquery.flot.resize.min.js" />
+    <Content Include="Styles\js\fuelux.wizard.min.js" />
+    <Content Include="Styles\js\fuelux\fuelux.spinner.min.js" />
+    <Content Include="Styles\js\fullcalendar.min.js" />
+    <Content Include="Styles\js\holder.js" />
+    <Content Include="Styles\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="Styles\js\jquery.colorbox-min.js" />
+    <Content Include="Styles\js\jquery.easy-pie-chart.min.js" />
+    <Content Include="Styles\js\jquery.gritter.min.js" />
+    <Content Include="Styles\js\jquery.slimscroll.min.js" />
+    <Content Include="Styles\js\jquery.sparkline.min.js" />
+    <Content Include="Styles\js\jquery.ui.touch-punch.min.js" />
+    <Content Include="Styles\js\jquery.validate.min.js" />
+    <Content Include="Styles\js\jquery-1.9.1.min.js" />
+    <Content Include="Styles\js\prettify.js" />
+    <Content Include="Styles\js\spin.min.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Update.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarMantenimiento.aspx.cs">
+      <DependentUpon>EditarMantenimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarMantenimiento.aspx.designer.cs">
+      <DependentUpon>EditarMantenimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarCapacitacion.aspx.cs">
+      <DependentUpon>EditarCapacitacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarCapacitacion.aspx.designer.cs">
+      <DependentUpon>EditarCapacitacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarRuta.aspx.cs">
+      <DependentUpon>EditarRuta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarRuta.aspx.designer.cs">
+      <DependentUpon>EditarRuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoMantenimiento.aspx.cs">
+      <DependentUpon>ListadoMantenimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoMantenimiento.aspx.designer.cs">
+      <DependentUpon>ListadoMantenimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoRuta.aspx.cs">
+      <DependentUpon>ListadoRuta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoRuta.aspx.designer.cs">
+      <DependentUpon>ListadoRuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarUnidad.aspx.cs">
+      <DependentUpon>EditarUnidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarUnidad.aspx.designer.cs">
+      <DependentUpon>EditarUnidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoUnidad.aspx.cs">
+      <DependentUpon>ListadoUnidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoUnidad.aspx.designer.cs">
+      <DependentUpon>ListadoUnidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoLugar.aspx.cs">
+      <DependentUpon>ListadoLugar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoLugar.aspx.designer.cs">
+      <DependentUpon>ListadoLugar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoClientes.aspx.cs">
+      <DependentUpon>ListadoClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoClientes.aspx.designer.cs">
+      <DependentUpon>ListadoClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoColaborador.aspx.cs">
+      <DependentUpon>ListadoColaborador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoColaborador.aspx.designer.cs">
+      <DependentUpon>ListadoColaborador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarCliente.aspx.cs">
+      <DependentUpon>EditarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarCliente.aspx.designer.cs">
+      <DependentUpon>EditarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarColaborador.aspx.cs">
+      <DependentUpon>EditarColaborador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarColaborador.aspx.designer.cs">
+      <DependentUpon>EditarColaborador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="EditarLugar.aspx.cs">
+      <DependentUpon>EditarLugar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarLugar.aspx.designer.cs">
+      <DependentUpon>EditarLugar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoPlanificacion.aspx.cs">
+      <DependentUpon>IngresoPlanificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IngresoPlanificacion.aspx.designer.cs">
+      <DependentUpon>IngresoPlanificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaPlanificacion.aspx.cs">
+      <DependentUpon>NuevaPlanificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NuevaPlanificacion.aspx.designer.cs">
+      <DependentUpon>NuevaPlanificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Planificacion.aspx.cs">
+      <DependentUpon>Planificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planificacion.aspx.designer.cs">
+      <DependentUpon>Planificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\font\fontawesome-webfont.eot" />
+    <None Include="assets\font\fontawesome-webfont.woff" />
+    <None Include="assets\images\gallery\Thumbs.db" />
+    <None Include="assets\images\Thumbs.db" />
+    <None Include="assets\img\Thumbs.db" />
+    <None Include="assets\js\jquery.min.map" />
+    <None Include="Styles\font\fontawesome-webfont.eot" />
+    <None Include="Styles\font\fontawesome-webfont.woff" />
+    <None Include="Styles\images\gallery\Thumbs.db" />
+    <None Include="Styles\images\Thumbs.db" />
+    <None Include="Styles\img\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TResPuntoCinco.Business\TresPuntoCinco.Business.csproj">
+      <Project>{0CB58240-566A-48F1-B3A5-C32E0EE35F14}</Project>
+      <Name>TresPuntoCinco.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TresPuntoCinco.Model\TresPuntoCinco.Model.csproj">
+      <Project>{E23DF6D4-A072-4E02-8719-649224E3FBF7}</Project>
+      <Name>TresPuntoCinco.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TresPuntoCinco.ViewModel\TresPuntoCinco.ViewModel.csproj">
+      <Project>{C1B2A721-55C0-47C3-9E31-E8843AE97DF2}</Project>
+      <Name>TresPuntoCinco.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>33088</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

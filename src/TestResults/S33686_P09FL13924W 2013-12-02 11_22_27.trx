@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="425aa013-954e-481b-b032-b1cab0293347" name="S33686@P09FL13924W 2013-12-02 11:22:27" runUser="BCPDOM\S33686" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="059212b4-818a-469c-9ce4-9c3eb0c20fac">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="S33686_P09FL13924W 2013-12-02 11_22_27">
+      <DeploymentItem filename="d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Data\bin\Debug\TresPuntoCinco.Data.dll" />
+      <DeploymentItem filename="d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Model\bin\Debug\TresPuntoCinco.Model.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-02T11:22:27.6108450-05:00" queuing="2013-12-02T11:22:27.6889680-05:00" start="2013-12-02T11:22:27.6889680-05:00" finish="2013-12-02T11:22:28.2514536-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="InsertSinClavePrimaria" storage="d:\datos de usuarios\s33686\my documents\visual studio 2010\projects\trespuntocinco\trespuntocinco.test\bin\debug\trespuntocinco.test.dll" id="701b7950-fcef-c189-f1d3-564816df2136">
+      <Execution id="91a51bad-01f1-4a39-ad8a-1d6728c88a07" />
+      <TestMethod codeBase="d:/datos de usuarios/s33686/my documents/visual studio 2010/Projects/TresPuntoCinco/TresPuntoCinco.Test/bin/Debug/TresPuntoCinco.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TresPuntoCinco.Test.Data.DbHelperTest, TresPuntoCinco.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InsertSinClavePrimaria" />
+    </UnitTest>
+    <UnitTest name="InsertTodasLasColumnas" storage="d:\datos de usuarios\s33686\my documents\visual studio 2010\projects\trespuntocinco\trespuntocinco.test\bin\debug\trespuntocinco.test.dll" id="bb5a6857-7ad1-cf1d-51ff-90bf80f3338c">
+      <Execution id="0a43c061-0296-486f-bd35-607fb42b36da" />
+      <TestMethod codeBase="d:/datos de usuarios/s33686/my documents/visual studio 2010/Projects/TresPuntoCinco/TresPuntoCinco.Test/bin/Debug/TresPuntoCinco.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TresPuntoCinco.Test.Data.DbHelperTest, TresPuntoCinco.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InsertTodasLasColumnas" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="701b7950-fcef-c189-f1d3-564816df2136" executionId="91a51bad-01f1-4a39-ad8a-1d6728c88a07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb5a6857-7ad1-cf1d-51ff-90bf80f3338c" executionId="0a43c061-0296-486f-bd35-607fb42b36da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="91a51bad-01f1-4a39-ad8a-1d6728c88a07" testId="701b7950-fcef-c189-f1d3-564816df2136" testName="InsertSinClavePrimaria" computerName="P09FL13924W" duration="00:00:00.0374877" startTime="2013-12-02T11:22:27.7045926-05:00" endTime="2013-12-02T11:22:27.9858354-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91a51bad-01f1-4a39-ad8a-1d6728c88a07">
+    </UnitTestResult>
+    <UnitTestResult executionId="0a43c061-0296-486f-bd35-607fb42b36da" testId="bb5a6857-7ad1-cf1d-51ff-90bf80f3338c" testName="InsertTodasLasColumnas" computerName="P09FL13924W" duration="00:00:00.1707339" startTime="2013-12-02T11:22:28.0014600-05:00" endTime="2013-12-02T11:22:28.1733306-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0a43c061-0296-486f-bd35-607fb42b36da">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TresPuntoCinco.Test.Data.DbHelperTest.InsertTodasLasColumnas threw exception: 
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'TresPuntoCinco.Model.Lugar' does not contain a definition for 'GetProperties'</Message>
+          <StackTrace>    at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at TresPuntoCinco.Data.DbHelper.GetColumnsFromObject(Object objectTogetColumns) in d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Data\DbHelper.cs:line 47
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at TresPuntoCinco.Data.DbHelper.GetInsertAllColumns(Object objectToInsert) in d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Data\DbHelper.cs:line 42
+   at TresPuntoCinco.Test.Data.DbHelperTest.InsertTodasLasColumnas() in d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Test\Data\DbHelperTest.cs:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

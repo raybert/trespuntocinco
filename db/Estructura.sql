@@ -1,0 +1,281 @@
+--CREATE DATABASE TresPuntoCinco
+--GO
+
+IF EXISTS ( SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Empresa' )
+BEGIN
+	DROP TABLE Empresa;
+END
+GO
+
+
+CREATE TABLE Empresa
+(
+	IdEmpresa INTEGER IDENTITY(1, 1) NOT NULL,
+	RazonSocial VARCHAR(500) NOT NULL,
+	Ruc VARCHAR(12) NULL
+)
+GO
+
+
+ALTER TABLE Empresa ADD CONSTRAINT PK_Empresa PRIMARY KEY (IdEmpresa)
+GO
+
+
+IF EXISTS ( SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Cliente' )
+BEGIN
+	DROP TABLE Cliente;
+END
+GO
+
+
+CREATE TABLE Cliente
+(
+	IdCliente INTEGER IDENTITY(1,1) NOT NULL,
+	RazonSocial VARCHAR(500) NOT NULL,
+	NumeroRuc VARCHAR(11)NOT NULL,
+	Url VARCHAR(500),
+	Telefono VARCHAR(20),
+	Direccion VARCHAR(500),
+	Estado CHAR,
+	Contacto VARCHAR(1500)
+)
+GO
+
+ALTER TABLE Cliente ADD CONSTRAINT PK_Cliente PRIMARY KEY (IdCliente);
+GO
+
+
+IF EXISTS ( SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Colaborador' )
+BEGIN
+	DROP TABLE Colaborador;
+END
+GO
+
+
+CREATE TABLE Colaborador
+(
+	IdColaborador INTEGER IDENTITY(1, 1) NOT NULL,
+	Nombre VARCHAR(200),
+	Apellidos VARCHAR(200),
+	Domicilio VARCHAR(1000),
+	Telefono VARCHAR(20),
+	NumeroBrevete VARCHAR(20),
+	TipoBrevete VARCHAR(10),
+	Documento INTEGER,
+	Estado CHAR
+)
+GO
+
+ALTER TABLE Colaborador ADD CONSTRAINT PK_Colaborador PRIMARY KEY (IdColaborador);
+GO
+
+IF EXISTS ( SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Lugar' )
+BEGIN
+	DROP TABLE Lugar;
+END
+GO
+
+
+CREATE TABLE Lugar
+(
+	IdLugar INTEGER IDENTITY(1, 1) NOT NULL,
+	NombreLugar VARCHAR(100),
+	NombreCorto VARCHAR(5)
+)
+GO
+
+ALTER TABLE Lugar ADD CONSTRAINT PK_Lugar PRIMARY KEY (IdLugar);
+GO
+
+
+IF EXISTS ( SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Planificacion' )
+BEGIN
+	DROP TABLE Planificacion;
+END
+GO
+
+
+CREATE TABLE Planificacion
+(
+     IdPlanificacion INTEGER IDENTITY(1, 1) NOT NULL,
+     FechaInicio DATE NOT NULL,
+     FechaFin DATE NULL,
+     IdConductor INTEGER NOT NULL,
+     IdCliente INTEGER NOT NULL,
+     IdRuta INTEGER NOT NULL,
+     IdUnidad INTEGER NOT NULL,
+     IdUnidadMedida INTEGER NOT NULL,
+     Carga VARCHAR(100),
+     FormaPago VARCHAR(100),
+     Recorrido INTEGER
+)
+GO
+
+ALTER TABLE Planificacion ADD CONSTRAINT PK_Planificacion PRIMARY KEY (IdPlanificacion)
+GO
+
+
+IF EXISTS ( SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Ruta' )
+BEGIN
+	DROP TABLE Ruta;
+END
+GO
+
+
+CREATE TABLE Ruta
+(
+	IdRuta INTEGER IDENTITY(1, 1) NOT NULL,
+	Origen INTEGER NOT NULL,
+	Destino INTEGER NOT NULL,
+	NombreRuta VARCHAR(50),
+	NombreCorto VARCHAR(50),
+	TiempoViaje INTEGER,
+	Kilometraje INTEGER
+)
+GO
+
+ALTER TABLE Ruta ADD CONSTRAINT PK_Ruta PRIMARY KEY (IdRuta);
+GO
+
+
+IF EXISTS ( SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Unidad' )
+BEGIN
+	DROP TABLE Unidad;
+END
+GO
+
+
+CREATE TABLE Unidad
+(
+	IdUnidad INTEGER IDENTITY(1, 1) NOT NULL,
+	IdEmpresa INTEGER NOT NULL,
+	Placa VARCHAR(10) NOT NULL,
+	Capacidad INTEGER NOT NULL,
+	IdTipoUnidad INTEGER NOT NULL,
+	RazonSocial VARCHAR(500),
+	IdUnidadMedida INTEGER NOT NULL,
+	Marca VARCHAR(100) NOT NULL,
+	Modelo VARCHAR(100) NOT NULL
+)
+GO
+
+ALTER TABLE Unidad ADD CONSTRAINT PK_Unidad PRIMARY KEY (IdUnidad);
+GO
+
+
+IF EXISTS ( SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'UnidadMedida' )
+BEGIN
+	DROP TABLE UnidadMedida;
+END
+GO
+
+
+CREATE TABLE UnidadMedida
+(
+	IdUnidadMedida INTEGER IDENTITY(1,1) NOT NULL,
+	Medida VARCHAR(50),
+	NombreCorto VARCHAR(5)
+)
+GO
+
+
+ALTER TABLE UnidadMedida ADD CONSTRAINT PK_UnidadMedida PRIMARY KEY (IdUnidadMedida)
+GO
+
+
+IF EXISTS ( SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Capacitacion' )
+BEGIN
+	DROP TABLE Capacitacion;
+END
+GO
+
+CREATE TABLE Capacitacion
+(
+	IdCapacitacion INTEGER IDENTITY(1,1) NOT NULL,
+	IdColaborador INTEGER NOT NULL,
+	NombreCapacitacion VARCHAR(500),
+	Fecha DATE NOT NULL,
+	Institucion VARCHAR(500)
+)
+GO
+
+ALTER TABLE Capacitacion ADD CONSTRAINT PK_Capacitacion PRIMARY KEY (IdCapacitacion)
+GO
+
+
+IF EXISTS ( SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'TipoUnidad' )
+BEGIN
+	DROP TABLE TipoUnidad;
+END
+GO
+
+
+CREATE TABLE TipoUnidad
+(
+	IdTipoUnidad INTEGER IDENTITY(1,1) NOT NULL,
+	Tipo VARCHAR(100)
+)
+GO
+
+
+ALTER TABLE TipoUnidad ADD CONSTRAINT PK_TipoUnidad PRIMARY KEY (IdTipoUnidad)
+GO
+
+
+IF EXISTS ( SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Mantenimiento' )
+BEGIN
+	DROP TABLE Mantenimiento;
+END
+GO
+
+
+CREATE TABLE Mantenimiento
+(
+	IdMantenimiento INTEGER IDENTITY(1, 1) NOT NULL,
+	IdUnidad INTEGER NOT NULL,
+	FechaInicio DATE NOT NULL,
+	FechaFin DATE NOT NULL,
+	Placa VARCHAR(5) NULL
+)
+GO
+
+ALTER TABLE Mantenimiento ADD CONSTRAINT PK_Mantenimiento PRIMARY KEY (IdMantenimiento)
+GO
+
+ALTER TABLE Unidad ADD CONSTRAINT FK_EmpresaUnidad FOREIGN KEY (Empresa) REFERENCES Empresa(IdEmpresa)
+GO
+
+ALTER TABLE Unidad ADD CONSTRAINT FK_TipoUnidadUnidad FOREIGN KEY (IdTipoUnidad) REFERENCES TipoUnidad(IdTipoUnidad)
+GO
+
+ALTER TABLE Ruta ADD CONSTRAINT FK_LugarOrigen FOREIGN KEY (Origen) REFERENCES Lugar(IdLugar)
+GO
+
+ALTER TABLE Ruta ADD CONSTRAINT FK_LugarDestino FOREIGN KEY (Destino) REFERENCES Lugar(IdLugar)
+GO
+
+ALTER TABLE Capacitacion ADD CONSTRAINT FK_ColaboradorCapacitacion FOREIGN KEY (IdColaborador) REFERENCES Colaborador(IdColaborador)
+GO
+
+ALTER TABLE Planificacion ADD CONSTRAINT FK_ColaboradorPlanificacion FOREIGN KEY (IdConductor) REFERENCES Colaborador(IdColaborador)
+GO
+
+ALTER TABLE Planificacion ADD CONSTRAINT FK_ClientePlanificacion FOREIGN KEY (IdCliente) REFERENCES Cliente(IdCliente)
+GO
+
+ALTER TABLE Planificacion ADD CONSTRAINT FK_RutaUnidad FOREIGN KEY (IdUnidad) REFERENCES Unidad(IdUnidad)
+GO
+
+ALTER TABLE Planificacion ADD CONSTRAINT FK_RutaUnidadMedida FOREIGN KEY (IdRuta) REFERENCES Ruta(IdRuta)
+GO
+
+ALTER TABLE Planificacion ADD CONSTRAINT FK_UnidadMedidaPlanificacion FOREIGN KEY (IdUnidadMedida) REFERENCES UnidadMedida(IdUnidadMedida)
+GO
+
+ALTER TABLE Planificacion ADD CONSTRAINT FK_RutaPlanificacion FOREIGN KEY (IdRuta) REFERENCES Ruta (IdRuta);
+GO
+
+ALTER TABLE Planificacion ADD CONSTRAINT FK_UnidadPlanificacion FOREIGN KEY (IdUnidad) REFERENCES Unidad (IdUnidad);
+GO
+
+

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5ba195a6-4aaa-42db-bc3d-f8f97c8a017f" name="S33686@P09FL13924W 2013-12-02 10:51:59" runUser="BCPDOM\S33686" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="059212b4-818a-469c-9ce4-9c3eb0c20fac">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="S33686_P09FL13924W 2013-12-02 10_51_59">
+      <DeploymentItem filename="d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Data\bin\Debug\TresPuntoCinco.Data.dll" />
+      <DeploymentItem filename="d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Model\bin\Debug\TresPuntoCinco.Model.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-02T10:51:59.4948159-05:00" queuing="2013-12-02T10:51:59.5573187-05:00" start="2013-12-02T10:51:59.5573187-05:00" finish="2013-12-02T10:51:59.8542070-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CuandoSeInvocaInsertDeberiaObtenerseSentencia" storage="d:\datos de usuarios\s33686\my documents\visual studio 2010\projects\trespuntocinco\trespuntocinco.test\bin\debug\trespuntocinco.test.dll" id="8f0fc2a7-525b-2c7b-867a-e0887a0ca3bd">
+      <Execution id="aaa48c05-2a5d-40a4-a386-d622d6f2996f" />
+      <TestMethod codeBase="d:/datos de usuarios/s33686/my documents/visual studio 2010/Projects/TresPuntoCinco/TresPuntoCinco.Test/bin/Debug/TresPuntoCinco.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TresPuntoCinco.Test.Data.DbHelperTest, TresPuntoCinco.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CuandoSeInvocaInsertDeberiaObtenerseSentencia" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8f0fc2a7-525b-2c7b-867a-e0887a0ca3bd" executionId="aaa48c05-2a5d-40a4-a386-d622d6f2996f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="aaa48c05-2a5d-40a4-a386-d622d6f2996f" testId="8f0fc2a7-525b-2c7b-867a-e0887a0ca3bd" testName="CuandoSeInvocaInsertDeberiaObtenerseSentencia" computerName="P09FL13924W" duration="00:00:00.0490274" startTime="2013-12-02T10:51:59.5729444-05:00" endTime="2013-12-02T10:51:59.8385813-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aaa48c05-2a5d-40a4-a386-d622d6f2996f">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;INSERT INTO Tabla (NombreLugar, NombreCorto) VALUES (@NombreLugar, @NombreCorto)&gt;. Actual:&lt;INSERT INTO Lugar (NombreLugar, NombreCorto) VALUES (@NombreLugar, @NombreC)&gt;. </Message>
+          <StackTrace>   at TresPuntoCinco.Test.Data.DbHelperTest.CuandoSeInvocaInsertDeberiaObtenerseSentencia() in d:\datos de usuarios\s33686\my documents\visual studio 2010\Projects\TresPuntoCinco\TresPuntoCinco.Test\Data\DbHelperTest.cs:line 14
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

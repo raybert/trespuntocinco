@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0CB58240-566A-48F1-B3A5-C32E0EE35F14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TresPuntoCinco.Business</RootNamespace>
+    <AssemblyName>TresPuntoCinco.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClienteBusiness.cs" />
+    <Compile Include="ColaboradorBusiness.cs" />
+    <Compile Include="MantenimientoBusiness.cs" />
+    <Compile Include="UnidadMedidaBusiness.cs" />
+    <Compile Include="EmpresaBusiness.cs" />
+    <Compile Include="TipoUnidadBusiness.cs" />
+    <Compile Include="RutaBusiness.cs" />
+    <Compile Include="UnidadBusiness.cs" />
+    <Compile Include="LugarBusiness.cs" />
+    <Compile Include="PlanificacionBussines.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TresPuntoCinco.DataAccess\TresPuntoCinco.DataAccess.csproj">
+      <Project>{72F7060C-CEC3-4665-88AD-781F2BD55B90}</Project>
+      <Name>TresPuntoCinco.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TresPuntoCinco.Data\TresPuntoCinco.Data.csproj">
+      <Project>{BC6660E5-746A-4A77-9876-C1E73EE990D3}</Project>
+      <Name>TresPuntoCinco.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TresPuntoCinco.Model\TresPuntoCinco.Model.csproj">
+      <Project>{E23DF6D4-A072-4E02-8719-649224E3FBF7}</Project>
+      <Name>TresPuntoCinco.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TresPuntoCinco.ViewModel\TresPuntoCinco.ViewModel.csproj">
+      <Project>{C1B2A721-55C0-47C3-9E31-E8843AE97DF2}</Project>
+      <Name>TresPuntoCinco.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
